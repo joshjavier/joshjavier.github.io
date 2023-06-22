@@ -1,0 +1,15 @@
+/* Enforce a measure for all elements, with a few exceptions */
+* {
+  max-inline-size: var(--measure, 60ch);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+section {
+  max-inline-size: none;
+}
