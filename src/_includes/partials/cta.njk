@@ -1,0 +1,18 @@
+{% set ctaPrefix = cta %}
+
+{% if ctaContent %}
+  {% set ctaPrefix = ctaContent %}
+{% endif %}
+
+<section id="contact" class="cta">
+  <div class="wrapper">
+    <h2>{{ ctaPrefix.title }}</h2>
+    <p>{{ ctaPrefix.summary | md | typogrify | safe }}</p>
+    <a href="{{ ctaPrefix.primaryButton.url }}" class="button">
+      {{ ctaPrefix.primaryButton.text }}
+    </a>
+    <a href="{{ ctaPrefix.secondaryButton.url | safe }}" class="button">
+      {{ ctaPrefix.secondaryButton.text }}
+    </a>
+  </div>
+</section>

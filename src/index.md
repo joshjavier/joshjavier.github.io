@@ -12,9 +12,6 @@ intro:
 projects:
   title: 'Projects'
   summary: "Here are **5 front-end projects** that give an idea of my skill level and attention to detail. You can read about each project for a more in-depth explanation of my thought process, challenges I've encountered, and how I solved them."
-primaryCTA:
-  title: 'Want to team up?'
-  description: "**I'm currently looking for a full-time front-end developer role in a junior level position!** I’m also open to other opportunities as well, so feel free to get in touch via LinkedIn or email."
 ---
 
 ## About me

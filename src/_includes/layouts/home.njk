@@ -1,0 +1,32 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <div class="[ intro] [ wrapper ]">
+    <h1>
+      <span>{{ intro.eyebrow }}</span>
+      {{ intro.main -}}
+    </h1>
+    <p>{{ intro.lowbrow }}</p>
+    <div>{{ intro.summary | md | safe }}</div>
+  </div>
+
+  <section id="about" class="[ about] [ wrapper ]">
+    <div class="flow">{{ content | safe }}</div>
+  </section>
+
+  <section id="projects" class="[ projects ] [ wrapper ]">
+    <h2>{{ projects.title }}</h2>
+    <p>{{ projects.summary | md | safe }}</p>
+    <ul role="list">
+    {%- for project in collections.projects %}
+      {% set name = project.data.title %}
+      {% set description = project.data.description %}
+      {% set url = project.url %}
+      {% set image = project.data.coverImage %}
+      {% include "partials/project-card.njk" %}
+    {% endfor %}
+    </ul>
+  </section>
+
+  {% include "partials/cta.njk" %}
+{% endblock %}

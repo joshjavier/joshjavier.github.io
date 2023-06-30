@@ -1,0 +1,12 @@
+{
+  "title": "Want to team up?",
+  "summary": "**I'm currently looking for a full-time front-end developer role in a junior level position!** I'm also open to other opportunities as well, so feel free to get in touch via LinkedIn or email.",
+  "primaryButton": {
+    "text": "Chat with me on LinkedIn",
+    "url": "https://www.linkedin.com/in/joshjavier/"
+  },
+  "secondaryButton": {
+    "text": "Send me an email",
+    "url": "mailto:&#x6a;&#x6f;&#x73;&#x68;&#x6a;&#x61;&#x76;&#x69;&#x65;&#x72;&#x31;&#x32;&commat;&#x67;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;"
+  }
+}
