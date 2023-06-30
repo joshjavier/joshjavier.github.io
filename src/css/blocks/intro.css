@@ -1,0 +1,83 @@
+.intro {
+  --wrapper-max-width: calc(828 / 16 * 1rem);
+  --gutter: calc(var(--space-m) + (216 - 18) * var(--fluid-bp));
+}
+
+.intro .headline {
+  color: var(--color-primary);
+  font-size: var(--step-6);
+  font-variation-settings: 'opsz' 60;
+  line-height: 0.9;
+  letter-spacing: calc(-1.911 / 16 * 1rem);
+}
+
+.intro .main {
+  padding-left: calc(25 / 16 * 1rem + (108 - 25) * var(--fluid-bp));
+}
+
+.intro .eyebrow,
+.intro .lowbrow {
+  color: var(--color-dark-tint-1);
+  font-style: italic;
+  font-weight: 400;
+  display: block;
+}
+
+.intro .eyebrow {
+  font-size: var(--step-5);
+}
+
+.intro .lowbrow {
+  font-size: var(--step-4);
+  letter-spacing: calc(-0.995 / 16 * 1rem);
+  line-height: 1;
+  max-width: 73%;
+  text-align: right;
+  margin-left: auto;
+  margin-right: calc(25 / 16 * 1rem);
+}
+
+.intro .summary {
+  margin-top: var(--space-2xl);
+  margin-left: auto;
+  margin-right: calc(50 / 16 * 1rem + (0 - 50) * var(--fluid-bp));
+  max-width: calc(206 / 16 * 1rem + (396 - 206) * var(--fluid-bp));
+  line-height: 1.2;
+}
+
+/* Create the down arrow to provide visual cue to the user */
+.intro .divider {
+  color: -var(--color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.intro .divider::before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  width: 2px;
+  height: calc(30 / 16 * 1rem + (100 - 30) * var(--fluid-bp));
+  height: 8vh;
+  background-color: var(--color-dark);
+  border-radius: 0 0 5em 5em;
+}
+
+/* Cover layout */
+.intro .divider {
+  margin-block-start: var(--space-2xl);
+}
+
+.intro .content {
+  margin-block: auto;
+}
+
+.intro {
+  /* 100vh - site header height - site header top and bottom margin */
+  min-height: calc(100vh - 48px - var(--space-xl-2xl) - var(--space-l));
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--space-l);
+}

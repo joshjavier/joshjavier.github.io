@@ -15,19 +15,17 @@ section {
 }
 
 /* Set global styles */
-:root {
+body {
   font-family: 'Fraunces', serif;
-  font-weight: 320;
+  font-weight: 335;
   font-variation-settings: 'SOFT' 100;
   font-size: var(--step-0);
-}
-
-body {
   letter-spacing: calc(-16 * 0.01 * 1px);
   line-height: 1.4;
 
   /* Wrapper defaults */
-  --gutter: 1.125rem;
+  --gutter: var(--space-m-xl);
+  --wrapper-max-width: calc(1260 / 16 * 1rem);
 }
 
 strong {
@@ -44,6 +42,8 @@ h1,
 h2,
 h3 {
   font-weight: 700;
+  font-optical-sizing: auto;
+  /* font-variation-settings: 'opsz' 58.59; */
 }
 
 h1 {

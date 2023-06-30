@@ -8,7 +8,7 @@ intro:
   summary: |-
     I specialize in building _beautiful_, _responsive_, and _accessible_ websites and apps.
 
-    Check out my projects, or scroll down to learn more about me.
+    [Check out my projects](#projects), or scroll down to learn more about me.
 projects:
   title: 'Projects'
   summary: "Here are **5 front-end projects** that give an idea of my skill level and attention to detail. You can read about each project for a more in-depth explanation of my thought process, challenges I've encountered, and how I solved them."

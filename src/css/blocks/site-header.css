@@ -1,0 +1,32 @@
+.site-header {
+  margin-top: var(--space-xl-2xl);
+  margin-bottom: var(--space-l);
+  display: flex;
+  column-gap: 1em;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-header > svg {
+  width: var(--space-l-xl);
+  flex-shrink: 0;
+}
+
+.site-header > ul {
+  display: flex;
+  gap: var(--space-s-xl);
+}
+
+.site-header a {
+  text-decoration: none;
+  color: var(--color-dark);
+  opacity: 0.5;
+  transition: opacity ease-out 200ms;
+}
+
+@media (hover: hover) {
+  .site-header a:hover {
+    opacity: 1;
+  }
+}

@@ -1,13 +1,18 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-  <div class="[ intro] [ wrapper ]">
-    <h1>
-      <span>{{ intro.eyebrow }}</span>
-      {{ intro.main -}}
-    </h1>
-    <p>{{ intro.lowbrow }}</p>
-    <div>{{ intro.summary | md | safe }}</div>
+  <div class="intro">
+    <div class="[ content ] [ wrapper ]">
+      <h1 class="headline">
+        <span class="eyebrow">{{ intro.eyebrow | typogrify | safe }}</span>
+        <span class="main">{{ intro.main -}}</span>
+      </h1>
+      <p class="lowbrow">{{ intro.lowbrow }}</p>
+      <div class="[ summary ] [ flow ]">{{ intro.summary | md | safe }}</div>
+    </div>
+    <div class="divider">
+      {% include "chevron-down.svg" %}
+    </div>
   </div>
 
   <section id="about" class="[ about] [ wrapper ]">
