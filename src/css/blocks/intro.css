@@ -47,7 +47,7 @@
 
 /* Create the down arrow to provide visual cue to the user */
 .intro .divider {
-  color: -var(--color-dark);
+  color: var(--color-dark);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -57,7 +57,7 @@
 .intro .divider::before {
   content: '';
   position: absolute;
-  bottom: 2px;
+  bottom: 5px;
   width: 2px;
   height: calc(30 / 16 * 1rem + (100 - 30) * var(--fluid-bp));
   height: 8vh;

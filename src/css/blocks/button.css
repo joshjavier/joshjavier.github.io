@@ -9,12 +9,37 @@
   font-variation-settings: 'opsz' 60;
   letter-spacing: calc(-1em * 0.03);
 
-  border: 1px solid var(--color-dark);
+  border: 1px solid currentColor;
   padding: var(--space-2xs) var(--space-xs);
+}
+
+.button-linkedin {
+  color: var(--color-white);
+  background-color: var(--color-tertiary);
+  border-color: var(--color-tertiary);
 }
 
 .button:hover {
   color: var(--color-white);
   background-color: var(--color-dark);
+  border-color: var(--color-dark);
   transition: all ease-out 100ms;
+}
+
+/* Dark buttons inside dark containers should have light border color */
+[data-bg='dark'] .button[data-bg='dark'] {
+  border-color: currentColor;
+}
+
+/* Hover styles for buttons *inside* a dark container */
+[data-bg='dark'] .button:hover {
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  border-color: var(--color-light);
+}
+
+/* Hover styles for dark-background buttons */
+.button[data-bg='dark']:hover {
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }

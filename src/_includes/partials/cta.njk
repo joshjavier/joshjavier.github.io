@@ -4,15 +4,19 @@
   {% set ctaPrefix = ctaContent %}
 {% endif %}
 
-<section id="contact" class="cta">
-  <div class="wrapper">
+<section id="contact" class="[ cta ] [ region ]">
+  <div class="wrapper flow">
     <h2>{{ ctaPrefix.title }}</h2>
     <p>{{ ctaPrefix.summary | md | typogrify | safe }}</p>
-    <a href="{{ ctaPrefix.primaryButton.url }}" class="button">
-      {{ ctaPrefix.primaryButton.text }}
-    </a>
-    <a href="{{ ctaPrefix.secondaryButton.url | safe }}" class="button">
-      {{ ctaPrefix.secondaryButton.text }}
-    </a>
+    <div class="buttons">
+      <a href="{{ ctaPrefix.primaryButton.url }}" class="button button-linkedin" data-bg="dark">
+        {{ ctaPrefix.primaryButton.text }}
+        {% icon "logo-linkedin" %}
+      </a>
+      <a href="{{ ctaPrefix.secondaryButton.url | safe }}" class="button">
+        {{ ctaPrefix.secondaryButton.text }}
+        {% icon "mail", "icon-stroke" %}
+      </a>
+    </div>
   </div>
 </section>
