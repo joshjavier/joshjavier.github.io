@@ -1,8 +1,8 @@
 /* prettier-ignore */
 @font-face {
   font-family: 'Fraunces';
-  src: url('../assets/Fraunces[SOFT,WONK,opsz,wght].woff2') format('woff2 supports variations'),
-       url('../assets/Fraunces[SOFT,WONK,opsz,wght].woff2') format('woff2-variations');
+  src: url('../assets/fonts/Fraunces[SOFT,WONK,opsz,wght].woff2') format('woff2 supports variations'),
+       url('../assets/fonts/Fraunces[SOFT,WONK,opsz,wght].woff2') format('woff2-variations');
   font-style: normal;
   font-weight: 100 900;
   font-variation-settings: 'WONK' 0;
@@ -12,8 +12,8 @@
 /* prettier-ignore */
 @font-face {
   font-family: 'Fraunces';
-  src: url('../assets/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2') format('woff2 supports variations'),
-       url('../assets/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2') format('woff2-variations');
+  src: url('../assets/fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2') format('woff2 supports variations'),
+       url('../assets/fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2') format('woff2-variations');
   font-style: italic;
   font-weight: 100 900;
   font-variation-settings: 'WONK' 0;
