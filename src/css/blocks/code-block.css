@@ -1,0 +1,6 @@
+pre {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  overflow-x: auto;
+  padding: var(--space-s) var(--space-m);
+}

@@ -5,8 +5,10 @@ demoURL: 'https://joshjavier.github.io/workit-landing-page/'
 codeURL: 'https://github.com/joshjavier/workit-landing-page'
 coverImage: '/assets/workit-cover.jpg'
 highlights:
-  - Fluid type and space thanks to [Utopia](https://utopia.fyi/)
-  - Responsive design that looks good on desktop, tablet, and mobile with **only 2 media queries**
+  - |
+    Fluid type and space thanks to [Utopia](https://utopia.fyi/)
+  - |
+    Responsive design that looks good on desktop, tablet, and mobile with **only 2 media queries**
   - CUBE CSS with Tailwind and design tokens
 builtWith:
   - Eleventy
@@ -42,5 +44,5 @@ The source code of [Build Excellent Websites](https://buildexcellentwebsit.es/) 
 
 I also gained more confidence working with SVG:
 
-- For the logos, I used inline SVG in the header and footer instead of \<img\> tags.
+- For the logos, I used inline SVG in the header and footer instead of `<img>` tags.
 - I combined the social media icons into an icon sprite embedded in the page, which avoids extra HTTP requests.

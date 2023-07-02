@@ -28,23 +28,23 @@ Web forms are often overlooked, but the're especially important for marketing si
 
 I incorporated three different types (or _moments_) of form validation:
 
-1. Instant validation
-2. Afterward validation
-3. Submit validation
+### Instant validation
 
-Specifically, the form field is validated when:
+This happens when the user types something and leaves the field, either by pressing Tab or clicking on a different element. This type of validation is associated with the `blur` event.
 
-1. The user types something and leaves the field, either by pressing Tab or clicking on a different element. This type of validation is associated with the `blur` event.
+<!-- afterward-validation.webm -->
 
-   afterward-validation.webm
+### Afterward validation
 
-2. The user submits the form. As you have guessed, this is associated with the `submit` event. In this solution, the focus is shifted back to the email field if it didn't satisfy validation.
+This is when the user submits the form. As you have guessed, this is associated with the `submit` event. In this solution, the focus is shifted back to the email field if it didn't satisfy validation.
 
-   submit-validation.webm
+<!-- submit-validation.webm -->
 
-3. Lastly, when the user goes back to the field to correct a mistake, instant validation is triggered so that the error message/styling can be removed once the user inputs the correct format. This is associated with the `keyup` event, though I think the `input` event can be used as well.
+### Submit validation
 
-   instant-validation.webm
+Lastly, when the user goes back to the field to correct a mistake, instant validation is triggered so that the error message/styling can be removed once the user inputs the correct format. This is associated with the `keyup` event, though I think the `input` event can be used as well.
+
+<!-- instant-validation.webm -->
 
 ## To ARIA, or not to ARIA
 

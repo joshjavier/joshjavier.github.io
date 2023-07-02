@@ -29,7 +29,7 @@ Here are the project requirements:
 - Display the scheme colors and hex values on the page
 - Stretch goal: click hex values to copy the clipboard
 
-color-scheme-generator-preview.gif
+<!-- color-scheme-generator-preview.gif -->
 
 ## Project notes
 

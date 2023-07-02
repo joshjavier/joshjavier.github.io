@@ -45,6 +45,10 @@
   line-height: 1.2;
 }
 
+.intro .summary em {
+  font-weight: 450;
+}
+
 /* Create the down arrow to provide visual cue to the user */
 .intro .divider {
   color: var(--color-dark);

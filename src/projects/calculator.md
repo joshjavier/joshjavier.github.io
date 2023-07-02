@@ -6,7 +6,8 @@ codeURL: 'https://github.com/joshjavier/calculator'
 coverImage: '/assets/calculator-cover.jpg'
 highlights:
   - Perform basic maths (&plus; &minus; &times; &divide;)
-  - Clear number on display with <kbd>CE</kbd> (Cancel Entry), or clear entire calculation with <kbd>C</kbd> (Clear)
+  - |
+    Clear number on display with <kbd>CE</kbd> (Cancel Entry), or clear entire calculation with <kbd>C</kbd> (Clear)
   - Keyboard-friendly ⌨️
 builtWith:
   - HTML and CSS
@@ -53,7 +54,7 @@ let register = {
 
 This data structure also makes it easy to emulate the standard behavior of calculators where operations are evaluated one at a time. For example, if I press `4 + 5` and then press `+` instead of `=`, the operation is evaluated, displaying `9`. I can chain operations, so if I press `11 + 32 / 2 =` I get `26`.
 
-calculator-demo.webm
+<!-- calculator-demo.webm -->
 
 One of my biggest takeaways for this project is learning how numbers are represented in JavaScript, and how to address this quirk.
 

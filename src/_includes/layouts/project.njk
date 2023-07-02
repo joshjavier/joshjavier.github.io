@@ -1,21 +1,29 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-  <article class="prose">
-    <header>
-      <h1>{{ title | typogrify | safe }}</h1>
-      <p>{{ description }}</p>
-      <div>
-        <a href="{{ demoURL }}">See the live demo</a>
-        <a href="{{ codeURL }}">Inspect the code</a>
+  <article class="[ project ] [ region flow ]">
+    <header class="[ project-header ] [ wrapper switcher ]">
+      <div class="[ text ] [ flow ]">
+        <h1 class="title">{{ title | typogrify | safe }}</h1>
+        <p class="description">{{ description }}</p>
+        <div class="[ buttons ] [ cluster ]">
+          <a href="{{ demoURL }}" class="button">
+            See the live demo
+            {% icon "chevron-right", "icon-stroke" %}
+          </a>
+          <a href="{{ codeURL }}" class="button">
+            Inspect the code
+            {% icon "chevron-right", "icon-stroke" %}
+          </a>
+        </div>
       </div>
-      <img src="{{ coverImage }}" alt="">
+      <div class="image"><img src="{{ coverImage }}" alt="" width="" height=""></div>
     </header>
 
-    <section>
+    <section class="[ keypoints ] [ switcher wrapper ]">
       <div>
         <h2>Highlights</h2>
-        <ul>
+        <ul data-type="check">
           {%- for item in highlights %}
             <li>{{ item | md | safe }}</li>
           {%- endfor %}
@@ -32,7 +40,7 @@
       </div>
     </section>
 
-    <section class="flow">
+    <section class="[ content ] [ prose wrapper ]">
       {{ content | typogrify | safe }}
     </section>
   </article>
