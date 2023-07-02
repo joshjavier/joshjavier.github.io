@@ -1,13 +1,22 @@
+const typographyPlugin = require('@jamshop/eleventy-plugin-typography')
 const markdownIt = require('markdown-it')
 const svgSprite = require('eleventy-plugin-svg-sprite')
 
 module.exports = (config) => {
+  config.setServerOptions({
+    watch: ['dist/css/main.css'],
+    showAllHosts: true,
+  })
+
   config.addPassthroughCopy('src/assets')
 
   // Put all projects in a collection
   config.addCollection('projects', (collection) => {
     return collection.getFilteredByGlob('src/projects/*.md')
   })
+
+  // Use curly quotes, ellipses, em dash, etc. to improve typography
+  config.addPlugin(typographyPlugin)
 
   // Add filter to transform markdown to HTML
   config.addFilter('md', (content) => {

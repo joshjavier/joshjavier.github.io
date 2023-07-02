@@ -17,7 +17,10 @@
   ],
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "concurrently": "^8.2.0",
+    "eleventy-plugin-svg-sprite": "^2.4.0",
+    "netlify-cli": "^15.6.0",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
