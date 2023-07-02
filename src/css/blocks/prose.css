@@ -1,0 +1,4 @@
+.prose {
+  @apply flow;
+  --measure: calc(720 / 16 * 1rem);
+}

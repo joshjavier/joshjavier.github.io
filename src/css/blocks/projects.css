@@ -1,0 +1,14 @@
+.projects {
+  --flow-space: var(--space-3xl-2xl);
+}
+
+.projects > header {
+  --flow-space: var(--space-s-l);
+}
+
+.project-list {
+  --measure: calc(1152 / 16 * 1rem);
+  --flow-space: var(--space-3xl);
+  padding: 0;
+  margin-inline-start: auto;
+}

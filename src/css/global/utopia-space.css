@@ -62,4 +62,6 @@
   --space-s-l: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-s-min)) * var(--fluid-bp));
   --space-s-xl: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-s-min)) * var(--fluid-bp));
   --space-m-xl: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-m-min)) * var(--fluid-bp));
+  --space-2xs-s: calc(((var(--fc-2xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-2xs-min)) * var(--fluid-bp));
+  --space-3xl-2xl: calc(((var(--fc-3xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-3xl-min)) * var(--fluid-bp));
 }

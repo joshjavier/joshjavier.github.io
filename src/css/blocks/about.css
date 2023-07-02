@@ -1,0 +1,16 @@
+.about {
+  --flow-space: calc(var(--space-l) + (40 - 24) * var(--fluid-bp));
+  --wrapper-max-width: calc(828 / 16 * 1rem);
+}
+
+.about h2 {
+  margin-bottom: var(--space-s-xl);
+}
+
+.about em {
+  color: var(--color-primary);
+}
+
+.about p {
+  margin-inline-start: auto;
+}

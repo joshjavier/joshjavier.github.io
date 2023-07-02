@@ -1,6 +1,21 @@
+const markdownIt = require('markdown-it')
 const svgSprite = require('eleventy-plugin-svg-sprite')
+
 module.exports = (config) => {
   config.addPassthroughCopy('src/assets')
+
+  // Put all projects in a collection
+  config.addCollection('projects', (collection) => {
+    return collection.getFilteredByGlob('src/projects/*.md')
+  })
+
+  // Add filter to transform markdown to HTML
+  config.addFilter('md', (content) => {
+    const md = new markdownIt({ html: true })
+    let inline = !content.includes('\n')
+
+    return inline ? md.renderInline(content) : md.render(content)
+  })
 
   // Inline SVGs as a sprite
   config.addPlugin(svgSprite, {

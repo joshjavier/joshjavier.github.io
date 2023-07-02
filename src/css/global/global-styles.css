@@ -10,7 +10,8 @@ header,
 nav,
 main,
 footer,
-section {
+section,
+article {
   max-inline-size: none;
 }
 

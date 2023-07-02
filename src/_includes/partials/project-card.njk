@@ -1,6 +1,13 @@
-<li>
-  <h3>{{ name }}</h3>
-  <img src="{{ image }}" alt="" />
-  <p>{{ description }}</p>
-  <a href="{{ url }}">Learn more</a>
+<li class="[ project-card ] [ flow ]">
+  <h3 class="title">{{ project.data.title }}</h3>
+  <div class="image">
+    <img src="{{ project.data.coverImage }}" alt="" width="" height="" />
+  </div>
+  <div class="[ text ] [ flow ]">
+    <p>{{ project.data.description }}</p>
+    <a href="{{ project.url }}" class="button">
+      Learn more <span class="visually-hidden">about my {{ project.data.title }} project</span>
+      {% icon "chevron-right", "icon-chevron" %}
+    </a>
+  </div>
 </li>

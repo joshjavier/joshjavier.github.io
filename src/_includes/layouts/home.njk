@@ -15,19 +15,17 @@
     </div>
   </div>
 
-  <section id="about" class="[ about] [ wrapper ]">
-    <div class="flow">{{ content | safe }}</div>
+  <section id="about" class="[ about ] [ wrapper region ]">
+    <article class="prose">{{ content | safe }}</article>
   </section>
 
-  <section id="projects" class="[ projects ] [ wrapper ]">
-    <h2>{{ projects.title }}</h2>
-    <p>{{ projects.summary | md | safe }}</p>
-    <ul role="list">
+  <section id="projects" class="[ projects ] [ wrapper region flow ]">
+    <header class="prose">
+      <h2>{{ projects.title }}</h2>
+      <p>{{ projects.summary | md | safe }}</p>
+    </header>
+    <ul role="list" class="[ project-list ] [ flow ]">
     {%- for project in collections.projects %}
-      {% set name = project.data.title %}
-      {% set description = project.data.description %}
-      {% set url = project.url %}
-      {% set image = project.data.coverImage %}
       {% include "partials/project-card.njk" %}
     {% endfor %}
     </ul>
