@@ -17,7 +17,7 @@
 
 .intro .eyebrow,
 .intro .lowbrow {
-  color: var(--color-dark-tint-1);
+  color: var(--color-dark-tint-10);
   font-style: italic;
   font-weight: 400;
   display: block;
