@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Scheme Generator</title>
+
+  <!-- Preload web fonts -->
+  <link rel="preload" href="/assets/fonts/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Fraunces-Italic.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="bg-light text-dark">
+  <div style="width: 0; height: 0; position: absolute; overflow: hidden;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol fill="none" viewBox="0 0 18 13" id="svg-check" xmlns="http://www.w3.org/2000/svg"><path d="M17 1 6 12 1 7" stroke="#DDA15E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol viewBox="0 0 15 9" id="svg-chevron-down"><path d="m1.835 1.77 6 6 6-6"/></symbol><symbol viewBox="0 0 9 15" id="svg-chevron-right"><path d="m1.18 13.825 6-6-6-6"/></symbol><symbol viewBox="0 0 22 22" id="svg-logo-linkedin"><path d="M19.82.5H2.294C1.337.5.5 1.19.5 2.135v17.566c0 .951.837 1.799 1.794 1.799h17.521c.963 0 1.685-.854 1.685-1.8V2.136C21.506 1.19 20.778.5 19.82.5ZM7.01 18.005H4V8.65H7.01v9.354ZM5.61 7.228h-.022c-.963 0-1.586-.716-1.586-1.613C4.002 4.7 4.642 4 5.626 4c.984 0 1.587.695 1.608 1.614 0 .897-.624 1.613-1.625 1.613Zm12.395 10.777h-3.009V12.89c0-1.225-.438-2.063-1.526-2.063-.832 0-1.324.563-1.543 1.111-.082.197-.104.465-.104.739v5.328H8.815V8.65h3.008v1.301c.438-.623 1.122-1.52 2.713-1.52 1.975 0 3.469 1.301 3.469 4.108v5.465Z"/></symbol><symbol viewBox="0 0 23 19" id="svg-mail"><path d="M3.279 1.046h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-16c-1.1 0-2-.9-2-2v-12c0-1.1.9-2 2-2Z"/><path d="m21.279 3.046-10 7-10-7"/></symbol></svg></div>
+  <header class="[ site-header ] [ wrapper ]">
+  <svg width="41" height="48" viewBox="0 0 41 48" fill="none">
+  <path d="M40.644 24.364C40.644 31.6749 38.9061 44.3234 24.9791 44.7071C26.1198 43.5657 27.0385 42.2807 27.7747 40.928C30.2832 36.3188 30.73 30.8183 30.73 27.012V0H40.644V24.364Z" fill="#393939"/>
+  <path d="M28.73 0.00399017H13.434C13.434 0.00399017 17.978 4.54799 17.978 11.716V27.012C17.978 43.268 12.41 47.364 12.41 47.364C26.938 47.364 28.73 34.436 28.73 27.012V0.00399017Z" fill="#393939"/>
+  <path d="M11.84 38.532C11.84 35.268 9.216 32.58 5.888 32.58C2.624 32.58 0 35.268 0 38.532C0 41.86 2.624 44.484 5.888 44.484C9.216 44.484 11.84 41.86 11.84 38.532Z" fill="#393939"/>
+</svg>
+
+    <a href="/">Back to project list</a>
+  
+</header>
+
+
+  <main>
+    
+  <article class="[ project ] [ region flow ]">
+    <header class="[ project-header ] [ wrapper switcher ]">
+      <div class="[ text ] [ flow ]">
+        <h1 class="title">Color Scheme Generator</h1>
+        <p class="description">A simple, responsive color scheme generator powered by The Color API.</p>
+        <div class="[ buttons ] [ cluster ]">
+          <a href="https://joshjavier.github.io/color-scheme-generator/" class="button">
+            See the live demo
+            <svg aria-hidden="true" class="icon icon-stroke"><use href="#svg-chevron-right"></use></svg>
+          </a>
+          <a href="https://github.com/joshjavier/color-scheme-generator" class="button">
+            Inspect the code
+            <svg aria-hidden="true" class="icon icon-stroke"><use href="#svg-chevron-right"></use></svg>
+          </a>
+        </div>
+      </div>
+      <div class="image"><img src="/assets/color-scheme-generator-desktop.png" alt=""></div>
+    </header>
+
+    <section class="[ keypoints ] [ switcher wrapper ]">
+      <div>
+        <h2>Highlights</h2>
+        <ul data-type="check">
+            <li>Generate a palette of 5 colors based on 8 different color schemes</li>
+            <li>Keyboard-friendly</li>
+            <li>1-click copy to clipboard</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Built with</h2>
+        <ul>
+            <li>HTML and CSS Flexbox</li>
+            <li>Vanilla JavaScript</li>
+            <li>ES6 Fetch and Async/Await</li>
+            <li>Mobile-First Workflow</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="[ content ] [ prose wrapper ]">
+      <h2>Why I built<span class="widont">&nbsp;</span>this</h2>
+<p>This unguided project is part of the <a href="https://scrimba.com/learn/frontend">Scrimba Frontend Developer Career Path</a>, which I finished in November<span class="widont">&nbsp;</span>2022.</p>
+<p>The goal is to build a simple app that makes use of an <span class="caps">API</span>. In this case, we&#8217;re using <a href="https://www.thecolorapi.com/">The Color <span class="caps">API</span></a> to fetch color schemes based on a seed<span class="widont">&nbsp;</span>color.</p>
+<p>Here are the project<span class="widont">&nbsp;</span>requirements:</p>
+<ul>
+<li>Choose &quot;seed color&quot; with an <code>&lt;input type=&quot;color&quot; /&gt;</code></li>
+<li>Choose color scheme mode in a <code>&lt;select&gt;</code> box</li>
+<li>Clicking button makes request to <a href="https://www.thecolorapi.com/">The Color <span class="caps">API</span></a> to get a color<span class="widont">&nbsp;</span>scheme</li>
+<li>Display the scheme colors and hex values on the<span class="widont">&nbsp;</span>page</li>
+<li>Stretch goal: click hex values to copy the<span class="widont">&nbsp;</span>clipboard</li>
+</ul>
+<!-- color-scheme-generator-preview.gif -->
+<h2>Project notes</h2>
+<p>I really enjoyed the process of solving roadblocks I encountered while working on this<span class="widont">&nbsp;</span>project.</p>
+<p>In simple projects like this, I like setting the body to <code>min-height: 100vh</code> to prevent having an awkward white space at the bottom. However, I learned that using <code>height: 100%</code> on an element has no effect if the parent only has <code>min-height</code> but no <code>height</code>. It took me a bit of time and playing around with the <span class="caps">CSS</span> to grok this concept, and I&#8217;m glad I understand it a little better<span class="widont">&nbsp;</span>now.</p>
+<p>In terms of accessibility, I wanted to make the app more accessible to keyboard users and allow them to tab between color strips. At first my color names were <code>p</code> tags, but I converted them into <code>button</code> tags so they have native tab-order <em>and</em> are semantically interactive (i.e., users can interact with them through mouse clicks, which will copy the color hex code to the<span class="widont">&nbsp;</span>clipboard).</p>
+<p>On the JavaScript side, I initially implemented the &quot;copy to clipboard&quot; function with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard">Clipboard <span class="caps">API</span></a>, but learned that it sometimes fails when the browser doesn&#8217;t have access to the clipboard. So as a fallback, I implemented the old-school way of copying to clipboard, which uses <code>document.execCommand(&quot;copy&quot;)</code>. It&#8217;s already <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand">deprecated</a>, but there&#8217;s no decent alternative yet,<span class="widont">&nbsp;</span>so&#8230;</p>
+<p>Lastly, I tried to apply progressive enhancement while writing the <span class="caps">CSS</span>. In particular, thinking about how browsers that don&#8217;t support newer <span class="caps">CSS</span> features can still provide users with a close enough<span class="widont">&nbsp;</span>experience.</p>
+<h2>Resources</h2>
+<ul>
+<li><a href="https://inclusive-components.design/cards/">Cards</a> - This is a gift that keeps on giving. Whenever I find myself creating some sort of card element, I&#8217;d always refer to this article for best practices. The pseudo-content trick and progressive enhancement concepts greatly influenced my implementation for the card strips on this<span class="widont">&nbsp;</span>project.</li>
+</ul>
+
+    </section>
+  </article>
+
+  <div data-bg="dark" class="bg-tertiary text-white">
+    
+
+
+
+<section id="contact" class="[ cta ] [ region ]">
+  <div class="wrapper flow">
+    <h2>Want to team up?</h2>
+    <p><strong>I&#8217;m currently looking for a full-time front-end developer role in a junior level position!</strong> I&#8217;m also open to other opportunities as well, so feel free to get in touch via LinkedIn or<span class="widont">&nbsp;</span>email.</p>
+    <div class="[ buttons ] [ cluster ]">
+      <a href="https://www.linkedin.com/in/joshjavier/" class="button button-linkedin" data-bg="dark">
+        Chat with me on LinkedIn
+        <svg aria-hidden="true" class="icon undefined"><use href="#svg-logo-linkedin"></use></svg>
+      </a>
+      <a href="mailto:&#x6a;&#x6f;&#x73;&#x68;&#x6a;&#x61;&#x76;&#x69;&#x65;&#x72;&#x31;&#x32;&commat;&#x67;&#x6d;&#x61;&#x69;&#x6c;&period;&#x63;&#x6f;&#x6d;" class="button">
+        Send me an email
+        <svg aria-hidden="true" class="icon icon-stroke"><use href="#svg-mail"></use></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="wrapper">
+    <p>☕ Hand-coded by Josh Javier. Built with 11ty.</p>
+  </div>
+</footer>
+
+</body>
+</html>
