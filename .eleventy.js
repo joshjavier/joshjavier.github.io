@@ -9,6 +9,8 @@ module.exports = (config) => {
   })
 
   config.addPassthroughCopy('src/assets')
+  config.addPassthroughCopy('src/index.js')
+  config.addWatchTarget('src/index.js')
 
   // Put all projects in a collection
   config.addCollection('projects', (collection) => {

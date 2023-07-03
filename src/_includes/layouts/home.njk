@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <div id="about" class="[ about ] [ wrapper region ]">
+  <div id="about" class="[ about ] [ wrapper region show-on-scroll ]">
     <article class="prose">{{ content | safe }}</article>
   </div>
 
@@ -26,7 +26,9 @@
     </header>
     <ul role="list" class="[ project-list ] [ flow ]">
     {%- for project in collections.projects %}
-      {% include "partials/project-card.njk" %}
+      <li class="show-on-scroll">
+        {% include "partials/project-card.njk" %}
+      </li>
     {% endfor %}
     </ul>
   </section>
