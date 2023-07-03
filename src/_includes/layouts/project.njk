@@ -4,7 +4,7 @@
   <article class="[ project ] [ region flow ]">
     <header class="[ project-header ] [ wrapper switcher ]">
       <div class="[ text ] [ flow ]">
-        <h1 class="title">{{ title | typogrify | safe }}</h1>
+        <h1 class="title">{{ title }}</h1>
         <p class="description">{{ description }}</p>
         <div class="[ buttons ] [ cluster ]">
           <a href="{{ demoURL }}" class="button">
@@ -25,7 +25,7 @@
         <h2>Highlights</h2>
         <ul data-type="check">
           {%- for item in highlights %}
-            <li>{{ item | md | safe }}</li>
+            <li><p>{{ item | md | safe }}</p></li>
           {%- endfor %}
         </ul>
       </div>
@@ -34,14 +34,14 @@
         <h2>Built with</h2>
         <ul>
           {%- for item in builtWith %}
-            <li>{{ item | md | safe }}</li>
+            <li><p>{{ item | md | safe }}</p></li>
           {%- endfor %}
         </ul>
       </div>
     </section>
 
     <section class="[ content ] [ prose wrapper ]">
-      {{ content | typogrify | safe }}
+      {{ content | safe }}
     </section>
   </article>
 

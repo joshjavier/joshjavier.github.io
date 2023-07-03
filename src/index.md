@@ -4,7 +4,7 @@ layout: 'layouts/home.njk'
 intro:
   eyebrow: "Hello! I'm"
   main: 'Josh Javier'
-  lowbrow: 'a front-end web developer.'
+  lowbrow: 'a front-end web&nbsp;developer.'
   summary: |-
     I specialize in building _beautiful_, _responsive_, and _accessible_ websites and apps.
 

@@ -5,10 +5,8 @@ demoURL: 'https://joshjavier.github.io/workit-landing-page/'
 codeURL: 'https://github.com/joshjavier/workit-landing-page'
 coverImage: '/assets/workit-cover.jpg'
 highlights:
-  - |
-    Fluid type and space thanks to [Utopia](https://utopia.fyi/)
-  - |
-    Responsive design that looks good on desktop, tablet, and mobile with **only 2 media queries**
+  - Fluid type and space thanks to [Utopia](https://utopia.fyi/)
+  - Responsive design that looks good on desktop, tablet, and mobile with **only 2 media queries**
   - CUBE CSS with Tailwind and design tokens
 builtWith:
   - Eleventy

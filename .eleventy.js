@@ -1,4 +1,4 @@
-const typographyPlugin = require('@jamshop/eleventy-plugin-typography')
+const typeset = require('typeset')
 const markdownIt = require('markdown-it')
 const svgSprite = require('eleventy-plugin-svg-sprite')
 
@@ -16,7 +16,9 @@ module.exports = (config) => {
   })
 
   // Use curly quotes, ellipses, em dash, etc. to improve typography
-  config.addPlugin(typographyPlugin)
+  config.addTransform('typeset', (content) => {
+    return typeset(content, { disable: ['hangingPunctuation', 'hyphenate'] })
+  })
 
   // Add filter to transform markdown to HTML
   config.addFilter('md', (content) => {

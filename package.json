@@ -17,7 +17,6 @@
   ],
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "concurrently": "^8.2.0",
     "eleventy-plugin-svg-sprite": "^2.4.0",
     "netlify-cli": "^15.6.0",
@@ -27,6 +26,7 @@
     "postcss-import-ext-glob": "^2.1.1",
     "postcss-lightningcss": "^0.8.1",
     "prettier": "2.8.8",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.3.2",
+    "typeset": "^0.3.3"
   }
 }

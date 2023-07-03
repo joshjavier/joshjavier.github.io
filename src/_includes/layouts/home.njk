@@ -4,10 +4,10 @@
   <div class="intro">
     <div class="[ content ] [ wrapper ]">
       <h1 class="headline">
-        <span class="eyebrow">{{ intro.eyebrow | typogrify | safe }}</span>
+        <span class="eyebrow">{{ intro.eyebrow }}</span>
         <span class="main">{{ intro.main -}}</span>
       </h1>
-      <p class="lowbrow">{{ intro.lowbrow }}</p>
+      <p class="lowbrow">{{ intro.lowbrow | safe }}</p>
       <div class="[ summary ] [ flow ]">{{ intro.summary | md | safe }}</div>
     </div>
     <div class="divider">

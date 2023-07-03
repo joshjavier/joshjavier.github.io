@@ -6,8 +6,7 @@ codeURL: 'https://github.com/joshjavier/calculator'
 coverImage: '/assets/calculator-cover.jpg'
 highlights:
   - Perform basic maths (&plus; &minus; &times; &divide;)
-  - |
-    Clear number on display with <kbd>CE</kbd> (Cancel Entry), or clear entire calculation with <kbd>C</kbd> (Clear)
+  - Clear number on display with <kbd>CE</kbd> (Cancel Entry), or clear entire calculation with <kbd>C</kbd> (Clear)
   - Keyboard-friendly ⌨️
 builtWith:
   - HTML and CSS

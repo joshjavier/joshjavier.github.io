@@ -37,7 +37,7 @@ So, I turned the answers into **radio buttons**, which not only prevents the use
 
 ### When to fetch new data
 
-This was tricky at first - I'm using `useEffect` to fetch the questions data from the OTDB API. I knew I had to put something in the dependency array to conditionally trigger the fetch operation, but what variable should I use?
+This was tricky at first -- I'm using `useEffect` to fetch the questions data from the OTDB API. I knew I had to put something in the dependency array to conditionally trigger the fetch operation, but what variable should I use?
 
 Since I only want to fetch a new set of questions when the user finishes a game and clicks on the "Play again" button, I decided to add a `round` state in my dependency array. Initially, `round` will have a value of `1`, and when the user finishes a quiz and starts a new one, `round` will increase by 1, thus trigerring the fetch operation in the `useEffect` block.
 
