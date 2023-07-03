@@ -472,7 +472,6 @@ pre {
 
 .intro .divider:before {
   content: "";
-  height: calc(30 / 16 * 1rem + (100 - 30) * var(--fluid-bp));
   background-color: var(--color-dark);
   border-radius: 0 0 5em 5em;
   width: 2px;
