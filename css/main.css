@@ -686,6 +686,18 @@ pre {
   }
 }
 
+html:not([class="no-js"]) .show-on-scroll {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: opacity .3s ease-out .25s, transform .6s cubic-bezier(.23, 1, .32, 1) .25s;
+  transform: translateY(2rem);
+}
+
+html:not([class="no-js"]) .is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .cluster {
   gap: var(--space-xs-s, 1rem);
   flex-wrap: wrap;
