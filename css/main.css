@@ -663,13 +663,19 @@ pre {
   display: flex;
 }
 
-.site-header > svg {
+.site-header a.home {
+  opacity: .9;
+  display: flex;
+}
+
+.site-header svg {
   width: var(--space-l-xl);
   flex-shrink: 0;
 }
 
 .site-header > ul {
   gap: var(--space-s-xl);
+  margin-block: 0;
   display: flex;
 }
 
