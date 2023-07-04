@@ -1,8 +1,11 @@
 <header class="[ site-header ] [ wrapper ]">
-  {% include "logo.svg" %}
+  <a href="/" class="home" title="Go back to homepage">
+    {% include "logo.svg" %}
+    <span class="visually-hidden">Home</span>
+  </a>
 
   {%- if '/projects' in page.url %}
-    <a href="/">Back to project list</a>
+    <a href="/#projects">Back to project list</a>
   {% else %}
     <ul role="list">
       {%- for item in navigation %}

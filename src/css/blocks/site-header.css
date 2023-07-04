@@ -8,7 +8,12 @@
   flex-wrap: wrap;
 }
 
-.site-header > svg {
+.site-header a.home {
+  display: flex;
+  opacity: 0.9;
+}
+
+.site-header svg {
   width: var(--space-l-xl);
   flex-shrink: 0;
 }
@@ -16,6 +21,7 @@
 .site-header > ul {
   display: flex;
   gap: var(--space-s-xl);
+  margin-block: 0;
 }
 
 .site-header a {
